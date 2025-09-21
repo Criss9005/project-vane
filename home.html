@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicología Infantil | Dra. Laura Méndez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .form-input:focus {
+            border-color: #8b5cf6;
+            box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center">
+                        <i data-feather="heart" class="text-purple-600 mr-2"></i>
+                        <span class="text-xl font-semibold text-gray-800">Dra. Laura Pérez</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-purple-600 transition">Inicio</a>
+                    <a href="#servicios" class="text-gray-700 hover:text-purple-600 transition">Servicios</a>
+                    <a href="#sobre-mi" class="text-gray-700 hover:text-purple-600 transition">Sobre Mí</a>
+                    <a href="#contacto" class="text-gray-700 hover:text-purple-600 transition">Contacto</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-500 hover:text-gray-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Psicología Infantil con Amor</h1>
+                    <p class="text-xl text-gray-600 mb-8">Ayudando a los más pequeños a crecer emocionalmente sanos y felices.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contacto" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition">Agendar Cita</a>
+                        <a href="#servicios" class="border border-purple-600 text-purple-600 hover:bg-purple-50 px-6 py-3 rounded-lg font-medium transition">Servicios</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+                    <img src="http://static.photos/wellness/640x360/99" alt="Psicóloga con niños" class="rounded-lg shadow-xl w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4" data-aos="fade-up">Sobre Mí</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Especialista en psicología infantil con más de 10 años de experiencia ayudando a niños y sus familias.
+                </p>
+            </div>
+            <div class="md:flex items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center" data-aos="fade-right">
+                    <img src="http://static.photos/people/640x360/23" alt="Dra. Laura Méndez" class="rounded-full w-64 h-64 object-cover shadow-lg">
+                </div>
+                <div class="md:w-2/3 md:pl-16" data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Dra. Laura Pérez</h3>
+                    <p class="text-gray-600 mb-6">
+                        Soy licenciada en Psicología por la Universidad Nacional Autónoma de México, con maestría en Psicología Infantil y Desarrollo. 
+                        Mi enfoque se centra en crear un ambiente seguro y amoroso donde los niños puedan expresarse libremente.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i data-feather="award" class="text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Especialización</h4>
+                                <p class="text-gray-600 text-sm">Terapia de juego, Ansiedad infantil, TDAH</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i data-feather="book" class="text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Educación</h4>
+                                <p class="text-gray-600 text-sm">UNAM - Maestría en Psicología Infantil</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i data-feather="users" class="text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Experiencia</h4>
+                                <p class="text-gray-600 text-sm">10+ años ayudando a niños y familias</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i data-feather="globe" class="text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Idiomas</h4>
+                                <p class="text-gray-600 text-sm">Español, Inglés, Lengua de Señas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4" data-aos="fade-up">Mis Servicios</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Servicios especializados para el bienestar emocional de tus hijos
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up">
+                    <div class="p-6">
+                        <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i data-feather="smile" class="text-purple-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Terapia de Juego</h3>
+                        <p class="text-gray-600 mb-4">
+                            Utilizo el juego como herramienta principal para ayudar a los niños a expresar sus emociones y resolver conflictos.
+                        </p>
+                        <ul class="text-gray-600 text-sm space-y-2">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-purple-600 mr-2 w-4"></i>
+                                Para niños de 3 a 12 años
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-purple-600 mr-2 w-4"></i>
+                                Sesiones de 50 minutos
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-purple-600 mr-2 w-4"></i>
+                                Ambiente seguro y divertido
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-6">
+                        <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i data-feather="activity" class="text-purple-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Manejo de TDAH</h3>
+                        <p class="text-gray-600 mb-4">
+                            Estrategias personalizadas para ayudar a niños con TDAH a mejorar su concentración y comportamiento.
+                        </p>
+                        <ul class="text-gray-600 text-sm space-y-2">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-purple-600 mr-2 w-4"></i>
+                                Evaluación inicial
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-purple-600 mr-2 w-4"></i>
+                                Plan personalizado
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-purple-600 mr-2 w-4"></i>
+                                Apoyo a padres y maestros
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-6">
+                        <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i data-feather="heart" class="text-purple-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Ansiedad Infantil</h3>
+                        <p class="text-gray-600 mb-4">
+                            Ayuda profesional para niños que experimentan ansiedad, miedos o preocupaciones excesivas.
+                        </p>
+                        <ul class="text-gray-600 text-sm space-y-2">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-purple-600 mr-2 w-4"></i>
+                                Técnicas de relajación
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-purple-600 mr-2 w-4"></i>
+                                Fortalecimiento emocional
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-purple-600 mr-2 w-4"></i>
+                                Seguimiento continuo
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-purple-600 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">Lo que dicen los padres</h2>
+                <div class="w-20 h-1 bg-white mx-auto mb-6"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl" data-aos="fade-right">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/1" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">María González</h4>
+                            <p class="text-purple-200 text-sm">Madre de Juan (8 años)</p>
+                        </div>
+                    </div>
+                    <p class="italic">
+                        "La Dra. Méndez ayudó a mi hijo a superar sus miedos con una paciencia y amor increíbles. Ahora es más seguro y feliz."
+                    </p>
+                    <div class="flex mt-4">
+                        <i data-feather="star" class="text-yellow-300 mr-1"></i>
+                        <i data-feather="star" class="text-yellow-300 mr-1"></i>
+                        <i data-feather="star" class="text-yellow-300 mr-1"></i>
+                        <i data-feather="star" class="text-yellow-300 mr-1"></i>
+                        <i data-feather="star" class="text-yellow-300"></i>
+                    </div>
+                </div>
+                <div class="bg-white bg-opacity-10 p-8 rounded-xl" data-aos="fade-left">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/2" alt="Cliente" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Carlos Ruiz</h4>
+                            <p class="text-purple-200 text-sm">Padre de Sofía (6 años)</p>
+                        </div>
+                    </div>
+                    <p class="italic">
+                        "Las sesiones de terapia de juego han sido maravillosas. Sofía ahora expresa mejor sus emociones y hemos aprendido mucho como familia."
+                    </p>
+                    <div class="flex mt-4">
+                        <i data-feather="star" class="text-yellow-300 mr-1"></i>
+                        <i data-feather="star" class="text-yellow-300 mr-1"></i>
+                        <i data-feather="star" class="text-yellow-300 mr-1"></i>
+                        <i data-feather="star" class="text-yellow-300 mr-1"></i>
+                        <i data-feather="star" class="text-yellow-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4" data-aos="fade-up">Contacto</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Agenda una cita o envíame un mensaje para cualquier consulta
+                </p>
+            </div>
+            <div class="md:flex">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Información de Contacto</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i data-feather="mail" class="text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Correo Electrónico</h4>
+                                <p class="text-gray-600">contacto@psicologalaura.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i data-feather="phone" class="text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Teléfono</h4>
+                                <p class="text-gray-600">+52 55 1234 5678</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i data-feather="map-pin" class="text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Consultorio</h4>
+                                <p class="text-gray-600">Av. Reforma 123, Col. Juárez, CDMX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-4">Redes Sociales</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full transition">
+                            <i data-feather="facebook" class="text-purple-600"></i>
+                        </a>
+                        <a href="#" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full transition">
+                            <i data-feather="instagram" class="text-purple-600"></i>
+                        </a>
+                        <a href="#" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full transition">
+                            <i data-feather="linkedin" class="text-purple-600"></i>
+                        </a>
+                        <a href="#" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full transition">
+                            <i data-feather="twitter" class="text-purple-600"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <form class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nombre</label>
+                            <input type="text" id="name" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Correo Electrónico</label>
+                            <input type="email" id="email" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Teléfono</label>
+                            <input type="tel" id="phone" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Servicio de Interés</label>
+                            <select id="service" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="terapia-juego">Terapia de Juego</option>
+                                <option value="tdah">Manejo de TDAH</option>
+                                <option value="ansiedad">Ansiedad Infantil</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                            <textarea id="message" rows="4" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-8 md:mb-0">
+                    <a href="#" class="flex items-center">
+                        <i data-feather="heart" class="text-purple-400 mr-2"></i>
+                        <span class="text-xl font-semibold">Dra. Laura Pérez</span>
+                    </a>
+                    <p class="mt-4 text-gray-400 max-w-xs">
+                        Psicología infantil con enfoque humanista y terapia de juego.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-8 md:grid-cols-3">
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Enlaces</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#inicio" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+                            <li><a href="#servicios" class="text-gray-400 hover:text-white transition">Servicios</a></li>
+                            <li><a href="#sobre-mi" class="text-gray-400 hover:text-white transition">Sobre Mí</a></li>
+                            <li><a href="#contacto" class="text-gray-400 hover:text-white transition">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Servicios</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Terapia de Juego</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Manejo de TDAH</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Ansiedad Infantil</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Orientación a Padres</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Legal</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Política de Privacidad</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Términos de Servicio</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2023 Dra. Laura Pérez. Todos los derechos reservados.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>

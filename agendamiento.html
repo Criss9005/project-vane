@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita | Psicología Infantil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://app.bookingmood.com/v1/embed.min.js" defer></script>
+    <style>
+        .booking-container {
+            min-height: 700px;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <i data-feather="heart" class="text-purple-600 mr-2"></i>
+                        <span class="text-xl font-semibold text-gray-800">Vanessa Sierra</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-purple-600 transition">Inicio</a>
+                    <a href="index.html#servicios" class="text-gray-700 hover:text-purple-600 transition">Servicios</a>
+                    <a href="index.html#sobre-mi" class="text-gray-700 hover:text-purple-600 transition">Sobre Mí</a>
+                    <a href="index.html#contacto" class="text-gray-700 hover:text-purple-600 transition">Contacto</a>
+                    <a href="agendamiento.html" class="text-purple-600 font-medium">Agendar</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-500 hover:text-gray-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Booking Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">Agenda tu cita</h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Selecciona el servicio, fecha y hora que mejor se adapte a tus necesidades. 
+                    Las citas se sincronizan directamente con mi calendario de Outlook.
+                </p>
+            </div>
+            
+            <div class="booking-container">
+                <!-- Microsoft Bookings embed code -->
+                <iframe src='https://outlook.office.com/bookings/embed/v1/calendar/YOUR_CALENDAR_ID' 
+                        frameborder='0' 
+                        scrolling='no' 
+                        width='100%' 
+                        height='700'
+                        style='border: 1px solid #e2e8f0; border-radius: 0.5rem;'>
+                </iframe>
+                
+                <div class="mt-8 bg-purple-50 p-6 rounded-lg">
+                    <div class="flex items-start">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i data-feather="info" class="text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Instrucciones para agendar</h3>
+                            <ul class="text-gray-700 space-y-2">
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-purple-600 mr-2 mt-1 w-4"></i>
+                                    <span>Selecciona el tipo de servicio que necesitas</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-purple-600 mr-2 mt-1 w-4"></i>
+                                    <span>Elige una fecha y hora disponible</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-purple-600 mr-2 mt-1 w-4"></i>
+                                    <span>Completa tus datos de contacto</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="text-purple-600 mr-2 mt-1 w-4"></i>
+                                    <span>Recibirás un correo de confirmación con los detalles de tu cita</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-8 md:mb-0">
+                    <a href="index.html" class="flex items-center">
+                        <i data-feather="heart" class="text-purple-400 mr-2"></i>
+                        <span class="text-xl font-semibold">Dra. Laura Pérez</span>
+                    </a>
+                    <p class="mt-4 text-gray-400 max-w-xs">
+                        Psicología infantil con enfoque humanista y terapia de juego.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-8 md:grid-cols-3">
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Enlaces</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+                            <li><a href="index.html#servicios" class="text-gray-400 hover:text-white transition">Servicios</a></li>
+                            <li><a href="index.html#sobre-mi" class="text-gray-400 hover:text-white transition">Sobre Mí</a></li>
+                            <li><a href="index.html#contacto" class="text-gray-400 hover:text-white transition">Contacto</a></li>
+                            <li><a href="agendamiento.html" class="text-purple-400 hover:text-purple-300 transition">Agendar Cita</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Servicios</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Terapia de Juego</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Manejo de TDAH</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Ansiedad Infantil</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Orientación a Padres</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Legal</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Política de Privacidad</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Términos de Servicio</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2023 Dra. Laura Pérez. Todos los derechos reservados.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        // Initialize booking widget
+        document.addEventListener('DOMContentLoaded', function() {
+            // Replace with your actual Microsoft Bookings embed code
+            // This would typically be provided by the Microsoft Bookings service
+        });
+    </script>
+</body>
+</html>

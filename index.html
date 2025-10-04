@@ -178,7 +178,7 @@
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up">
+                <div id="service1" class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up">
                     <div class="p-6">
                         <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
                             <i data-feather="smile" class="text-purple-600 text-2xl"></i>
@@ -219,7 +219,7 @@
                 </div>
                 
                 <!-- Service 2 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div id="service2" class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
                     <div class="p-6">
                         <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
                             <i data-feather="activity" class="text-purple-600 text-2xl"></i>
@@ -245,7 +245,7 @@
                 </div>
                 
                 <!-- Service 3 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                <div id="service3" class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="200">
                     <div class="p-6">
                         <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
                             <i data-feather="book-open" class="text-purple-600 text-2xl"></i>
@@ -279,7 +279,7 @@
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div id="service4" class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
                     <div class="p-6">
                         <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
                             <i data-feather="meh" class="text-purple-600 text-2xl"></i>
@@ -313,7 +313,7 @@
                 </div>
 
                 <!-- Service 5 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div id="service5" class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
                     <div class="p-6">
                         <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
                             <i data-feather="heart" class="text-purple-600 text-2xl"></i>
@@ -348,7 +348,7 @@
 
 
                 <!-- Service 6 -->
-                <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div id="service6" class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
                     <div class="p-6">
                         <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
                             <i data-feather="users" class="text-purple-600 text-2xl"></i>
@@ -482,20 +482,26 @@
                             </div>
                     <h3 class="text-xl font-semibold text-gray-800 mt-8 mb-4">Redes Sociales</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone text-purple-600">
+                        <a href="https://wa.me/+573235843572" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"   stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone text-purple-600">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5129 3.4866C18.2882 1.24722 15.2597 -0.00837473 12.1032 4.20445e-05C5.54964 4.20445e-05 0.216056 5.33306 0.213776 11.8883C0.210977 13.9746 0.75841 16.0247 1.80085 17.8319L0.114014 23.9932L6.41672 22.34C8.15975 23.2898 10.1131 23.7874 12.0981 23.7874H12.1032C18.6556 23.7874 23.9897 18.4538 23.992 11.8986C24.0022 8.74248 22.7494 5.71347 20.5129 3.4866ZM12.1032 21.7768H12.0992C10.3294 21.7776 8.59195 21.3025 7.06888 20.4012L6.70803 20.1874L2.96836 21.1685L3.96713 17.52L3.73169 17.1461C2.74331 15.5709 2.22039 13.7484 2.22328 11.8889C2.22328 6.44185 6.65615 2.00783 12.1072 2.00783C14.7284 2.00934 17.2417 3.05207 19.0941 4.90662C20.9465 6.76117 21.9863 9.27564 21.9848 11.8969C21.9825 17.3456 17.5496 21.7768 12.1032 21.7768ZM17.5234 14.3755C17.2264 14.2267 15.7659 13.5085 15.4934 13.4064C15.2209 13.3044 15.0231 13.2576 14.8253 13.5552C14.6275 13.8528 14.058 14.5215 13.8847 14.7199C13.7114 14.9182 13.5381 14.9427 13.241 14.794C12.944 14.6452 11.9869 14.3316 10.8519 13.3198C9.96884 12.5319 9.36969 11.5594 9.19867 11.2618C9.02765 10.9642 9.18043 10.8057 9.32922 10.6552C9.46261 10.5224 9.62622 10.3086 9.77444 10.1348C9.92266 9.9609 9.97283 9.83776 10.0714 9.63938C10.1701 9.44099 10.121 9.26769 10.0469 9.1189C9.97283 8.97011 9.37824 7.50788 9.13083 6.9133C8.88969 6.3341 8.64513 6.4122 8.46271 6.40023C8.29169 6.39168 8.09102 6.38997 7.89264 6.38997C7.58822 6.39793 7.30097 6.53267 7.10024 6.76166C6.82831 7.05923 6.061 7.77752 6.061 9.23976C6.061 10.702 7.12532 12.1146 7.27354 12.313C7.42176 12.5114 9.36855 15.5117 12.3472 16.7989C12.9004 17.0375 13.4657 17.2468 14.0409 17.426C14.7523 17.654 15.3999 17.6204 15.9118 17.544C16.4819 17.4585 17.6694 16.8251 17.9173 16.1313C18.1653 15.4376 18.1648 14.8424 18.0884 14.7187C18.012 14.595 17.8204 14.5266 17.5234 14.3778V14.3755Z"/>
                             </svg>
                         </a>
-                        <a href="#" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full transition">
+                        <a href="https://www.facebook.com/share/1BCNXT4pga/?mibextid=wwXIfr" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full transition">
                             <i data-feather="facebook" class="text-purple-600"></i>
                         </a>
-                        <a href="#" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full transition">
+                        <a href="https://www.instagram.com/psico_vanesierra?igsh=MWNjZXU0YTQ3b292aw%3D%3D&utm_source=qr" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full transition">
                             <i data-feather="instagram" class="text-purple-600"></i>
                         </a>
-                        <a href="#" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full transition">
-                            <i data-feather="linkedin" class="text-purple-600"></i>
+                        <a href="https://www.tiktok.com/@psico.vanessa.sie?_t=ZS-90CYPsqFyJl&_r=1" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" fill="currentColor" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone text-purple-600">
+                            
+                                <path d="M38.0766847,15.8542954 C36.0693906,15.7935177 34.2504839,14.8341149 32.8791434,13.5466056 C32.1316475,12.8317108 31.540171,11.9694126 31.1415066,11.0151329 C30.7426093,10.0603874 30.5453728,9.03391952 30.5619062,8 L24.9731521,8 L24.9731521,28.8295196 C24.9731521,32.3434487 22.8773693,34.4182737 20.2765028,34.4182737 C19.6505623,34.4320127 19.0283477,34.3209362 18.4461858,34.0908659 C17.8640239,33.8612612 17.3337909,33.5175528 16.8862248,33.0797671 C16.4386588,32.6422142 16.0833071,32.1196657 15.8404292,31.5426268 C15.5977841,30.9658208 15.4727358,30.3459348 15.4727358,29.7202272 C15.4727358,29.0940539 15.5977841,28.4746337 15.8404292,27.8978277 C16.0833071,27.3207888 16.4386588,26.7980074 16.8862248,26.3604545 C17.3337909,25.9229017 17.8640239,25.5791933 18.4461858,25.3491229 C19.0283477,25.1192854 19.6505623,25.0084418 20.2765028,25.0219479 C20.7939283,25.0263724 21.3069293,25.1167239 21.794781,25.2902081 L21.794781,19.5985278 C21.2957518,19.4900128 20.7869423,19.436221 20.2765028,19.4380839 C18.2431278,19.4392483 16.2560928,20.0426009 14.5659604,21.1729264 C12.875828,22.303019 11.5587449,23.9090873 10.7814424,25.7878401 C10.003907,27.666593 9.80084889,29.7339663 10.1981162,31.7275214 C10.5953834,33.7217752 11.5748126,35.5530237 13.0129853,36.9904978 C14.4509252,38.4277391 16.2828722,39.4064696 18.277126,39.8028054 C20.2711469,40.1991413 22.3382874,39.9951517 24.2163416,39.2169177 C26.0948616,38.4384508 27.7002312,37.1209021 28.8296253,35.4300711 C29.9592522,33.7397058 30.5619062,31.7522051 30.5619062,29.7188301 L30.5619062,18.8324027 C32.7275484,20.3418321 35.3149087,21.0404263 38.0766847,21.0867664 L38.0766847,15.8542954 Z" id="Fill-1" ></path>
+                           
+                        </svg>
                         </a>
+
+                        
                     </div>
                     
                 </div>
@@ -574,39 +580,22 @@
                     <div>
                         <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Servicios</h3>
                         <ul class="space-y-2">
-                            <li><a href="#" class="text-gray-400 hover:text-white transition">Terapia de Juego</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition">Manejo de TDAH</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition">Ansiedad Infantil</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition">Orientación a Padres</a></li>
+                            <li><a href="#service1" class="text-gray-400 hover:text-white transition">Regulación emocional y bienestar psicológico</a></li>
+                            <li><a href="#service2" class="text-gray-400 hover:text-white transition">Dificultades en el neurodesarrollo</a></li>
+                            <li><a href="#service3" class="text-gray-400 hover:text-white transition">Dificultades académicas y escolares</a></li>
+                            <li><a href="#service4" class="text-gray-400 hover:text-white transition">Problemas de conducta y socialización</a></li>
+                            <li><a href="#service5" class="text-gray-400 hover:text-white transition">Procesos emocionales difíciles</a></li>
+                            <li><a href="#service6" class="text-gray-400 hover:text-white transition">Orientación en crianza para padres</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h3 class="text-sm font-semibold uppercase tracking-wider mb-4">Legal</h3>
-                        <ul class="space-y-2">
-                            <li><a href="#" class="text-gray-400 hover:text-white transition">Política de Privacidad</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition">Términos de Servicio</a></li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </div>
             <div class="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 text-sm">
                     © 2025 Vanessa Sierra. Todos los derechos reservados.
                 </p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="text-gray-400 hover:text-white transition">
-                        <i data-feather="facebook"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">
-                        <i data-feather="instagram"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">
-                        <i data-feather="linkedin"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">
-                        <i data-feather="twitter"></i>
-                    </a>
-                </div>
+               
             </div>
         </div>
     </footer>

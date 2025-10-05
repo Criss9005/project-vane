@@ -506,43 +506,45 @@
                     
                 </div>
                 <div class="md:w-1/2" data-aos="fade-left">
-                    <form class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                    <form class="bg-gray-50 p-8 rounded-xl shadow-sm" action="https://formsubmit.co/vanessasierra.psicoinfantil@gmail.com" method="POST">
                         <div class="mb-6">
                             <label for="name" class="block text-gray-700 font-medium mb-2">Nombre del Acudiente</label>
-                            <input type="text" id="name" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="text" id="name" name="nombre" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
                         </div>
                         <div class="mb-6">
                             <label for="name" class="block text-gray-700 font-medium mb-2">Edad del niño o adolescente</label>
-                            <input type="text" id="name" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="number" id="name" name="edad" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
                         </div>
                         <div class="mb-6">
                             <label for="name" class="block text-gray-700 font-medium mb-2">Horario Preferido</label>
-                            <input type="text" id="name" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <select id="service" name="horario" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                                <option value="Mañana">Mañana</option>
+                                <option value="Tarde">Tarde</option>
+                                
+                            </select>
                         </div>
                         <div class="mb-6">
-                            <label for="name" class="block text-gray-700 font-medium mb-2">Método de Contacto</label>
-                            <input type="text" id="name" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Teléfono de Contacto</label>
+                            <input type="number" name="telefono" id="name" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
                         </div>
                         <div class="mb-6">
                             <label for="service" class="block text-gray-700 font-medium mb-2">Servicio de Interés</label>
-                            <select id="service" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
-                                <option value="">Regulación emocional y bienestar psicológico</option>
-                                <option value="terapia-juego">Dificultades en el neurodesarrollo</option>
-                                <option value="tdah">Dificultades académicas y escolares</option>
-                                <option value="ansiedad">Problemas de conducta y socialización</option>
-                                <option value="ansiedad">Procesos emocionales difíciles</option>
-                                <option value="ansiedad">Orientación en crianza para padres</option>
-                                <option value="otro">Otro</option>
+                            <select id="service" name="servicio" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+                                <option value="Regulación emocional y bienestar psicológico">Regulación emocional y bienestar psicológico</option>
+                                <option value="Dificultades en el neurodesarrollo">Dificultades en el neurodesarrollo</option>
+                                <option value="Dificultades académicas y escolares">Dificultades académicas y escolares</option>
+                                <option value="Problemas de conducta y socialización">Problemas de conducta y socialización</option>
+                                <option value="Procesos emocionales difíciles">Procesos emocionales difíciles</option>
+                                <option value="Orientación en crianza para padres">Orientación en crianza para padres</option>
+                                <option value="Otro">Otro</option>
                             </select>
                         </div>
                         <div class="mb-6">
                             <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
-                            <textarea id="message" rows="4" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                            <textarea id="message" name="mensaje" rows="4" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
                         </div>
                         <div class="grid grid-cols-2 gap-4">
-                            <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition">
-                                Enviar Mensaje
-                            </button>
+                            <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition">Enviar Mensaje</button>
                             <a href="agendamiento.html" class="bg-white border border-purple-600 text-purple-600 hover:bg-purple-50 px-6 py-3 rounded-lg font-medium transition text-center">
                                 Agendar Ahora
                             </a>
